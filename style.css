@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; 
+  color: #ffffff;
+}
+
+.button {
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #555;
+  color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(255, 255, 255, 0.2);
+}
+
+
+.row {
+  margin: 8px 0;
+}
+
+.row input {
+  width: 291px;
+  font-size: 20px;
+  margin: 0;
+  padding: 16px 0px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-red {
+  background: #272424;
+  width: 350px;
+  padding: 10px 0px 15px 0px;
+}
+
+.mybtn {
+  color: #fff;
+  background-color:#e77b22;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 160px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+body.light-mode .bg-red {
+  background:#79554887;
+}
+
+body.light-mode .button {
+  background-color: #eee;
+  color: #000;
+}
+
+body.light-mode .row input {
+  background-color: #fff;
+  color: #000;
+}
+
+body.light-mode .mybtn {
+  color: #fff;
+  background-color: #e77b22;
+}
